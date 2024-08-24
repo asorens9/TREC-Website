@@ -1,0 +1,653 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.header-container {
+    display: fixed;
+    align-items: left; 
+    padding: .5%;
+    background-color: rgb(255, 255, 255); 
+    position: sticky;
+    /* width: 100vw; */
+    top: 0;
+    left: 0;
+    z-index: 10;
+    color: rgb(0, 0, 0);
+    max-width: 100vw;
+}
+
+.header-container .logo {
+    width: 175px; 
+    height: auto;
+    margin-right: 10px; 
+}
+
+.header-container .title {
+    font-size: 1.5em;
+    
+}
+
+.options-container {
+    display: flex; /* Flex for alignment */
+    justify-content: flex-start; /* Aligns items to the left */
+    align-items: center;
+    padding: 16px;
+    background-color: rgb(140, 29, 64); 
+    position: fixed;
+    width: 100%;
+    top: auto;
+    z-index: 20;
+    gap: 2%; /* Adds space between items */
+}
+
+.options-container a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1em;
+    padding: 0.5em 1em;
+    text-align: center;
+    transition: all 200ms ease;
+    transform-origin: center; /* Keeps the text centered */
+}
+
+.home-button img {
+    width: 40px; /* Adjust the size of the home button image */
+    /* height: auto; */
+}
+
+/* .options-container a:hover, .home-button:hover {
+    color: #fff;
+    font-weight: bold;
+    transform: scale(1.1); 
+    text-shadow: 0 0 0.1em #000;  Adds shadow to compensate for bolding 
+} */
+.options-container nav-links {
+    vertical-align: center;
+}
+.options-container a:hover {
+    color: #fff;
+    font-weight: bold;
+    transform: scale(1.1); 
+    text-shadow: 0 0 0.1em #000; /* Adds shadow to compensate for bolding */
+}
+
+.options-container a.active {
+    background-color: rgba(255, 198, 39, 0);
+    color: #fff;
+    font-weight: bold;
+    transform: scale(1.2);
+    /* font-size: 20px; */
+}
+
+.parallax .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4em;
+    font-weight: bold;
+    padding: 20px;
+    width: 90%;
+    max-width: 3000%;
+}
+
+.summary-container h1 {
+    text-align: center;
+    color: #340d0d;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    min-width: 100%;
+}
+
+.summary-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    padding: 1%;
+    border-radius: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    line-height: 4vh; 
+}
+
+.summary-section img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.summary-section .info {
+    flex-grow: 1;
+}
+
+.summary-section .info h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: rgb(255,198,39);
+    text-align: center;
+}
+
+.summary-section .info h2 a {
+    text-decoration: none;
+    color: rgb(255,198,39);
+}
+
+.summary-section .info h2 a:hover {
+    text-decoration: underline;
+}
+
+.summary-section .info p {
+    margin: 5px 0 0;
+    margin-left: 10px;
+    color: #fff;
+}
+
+.summary-section .icon {
+    width: 48px; /* Increased icon size */
+    height: 48px;
+    margin-right: 15px; /* Adjust margin if needed */
+}
+
+.summary-section a:hover {
+    text-decoration: underline;
+}
+
+.summary-section a {
+    color: rgb(255, 198, 39);
+    text-decoration: none;
+    font-size: 2em; /* Increased font size for better visibility */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.summary-section h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.home-button {
+    position: absolute;
+    top: 1.24vh;
+    right: 4%;
+}
+/* 
+.home-button img {
+    width: 40px; /* Adjust the size of the home button image */
+    /* height: auto; */
+
+
+.summary-container h2, .summary-container h3 {
+    text-decoration: none;
+    color: rgb(255,198,39);
+}
+.centered-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; /* Adjust the percentage to make the image bigger or smaller */
+    margin-bottom: 50px;
+}
+
+.parallax {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    margin-top: auto;
+}
+
+.team-container, .summary-container {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    color: #fff; /* White text for contrast */
+}
+
+.team-container h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.team-member .info {
+    flex-grow: 1;
+}
+
+.team-member .info h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.team-member .info h2 a {
+    text-decoration: none;
+    color: rgb(255,198,39);
+}
+
+.team-member .info h2 a:hover {
+    text-decoration: underline;
+}
+
+.team-member .info p {
+    margin: 5px 0 0;
+    color: #fff;
+}
+
+.team-member .info h2 {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.team-member .info h2 a {
+    text-decoration: none;
+    color: rgb(255,198,39);
+    margin-right: 10px;
+}
+
+.team-member .info h2 a:hover {
+    text-decoration: underline;
+}
+
+.team-member .info h2 .small-icon {
+    width: 70px; /* Adjust size as needed */
+    height: auto;
+    align-items: right;
+}
+
+/* Style for the dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style for the dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(140, 29, 64); 
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 105%; /* Positions the dropdown right below the options container */
+    left: 0%;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Show the dropdown content when hovering over the dropdown button */
+.dropdown:hover .dropdown-content,
+.dropdown-content:hover {
+    display: block;
+}
+
+html {
+    scroll-padding-top: 30vh; /* Adjust this value to match the height of your header */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.header-container {
+    display: fixed;
+    align-items: left; 
+    padding: .5%;
+    background-color: rgb(255, 255, 255); 
+    position: sticky;
+    /* width: 100vw; */
+    top: 0;
+    left: 0;
+    z-index: 10;
+    color: rgb(0, 0, 0);
+    max-width: 100vw;
+}
+
+.header-container .logo {
+    width: 175px; 
+    height: auto;
+    margin-right: 10px; 
+}
+
+.header-container .title {
+    font-size: 1.5em;
+    
+}
+
+.options-container {
+    display: flex; /* Flex for alignment */
+    justify-content: flex-start; /* Aligns items to the left */
+    align-items: center;
+    padding: 16px;
+    background-color: rgb(140, 29, 64); 
+    position: fixed;
+    width: 100%;
+    top: auto;
+    z-index: 20;
+    gap: 2%; /* Adds space between items */
+}
+
+.options-container a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1em;
+    padding: 0.5em 1em;
+    text-align: center;
+    transition: all 200ms ease;
+    transform-origin: center; /* Keeps the text centered */
+}
+
+.home-button img {
+    width: 40px; /* Adjust the size of the home button image */
+    /* height: auto; */
+}
+
+/* .options-container a:hover, .home-button:hover {
+    color: #fff;
+    font-weight: bold;
+    transform: scale(1.1); 
+    text-shadow: 0 0 0.1em #000;  Adds shadow to compensate for bolding 
+} */
+.options-container nav-links {
+    vertical-align: center;
+}
+.options-container a:hover {
+    color: #fff;
+    font-weight: bold;
+    transform: scale(1.1); 
+    text-shadow: 0 0 0.1em #000; /* Adds shadow to compensate for bolding */
+}
+
+.options-container a.active {
+    background-color: rgba(255, 198, 39, 0);
+    color: #fff;
+    font-weight: bold;
+    transform: scale(1.2);
+    /* font-size: 20px; */
+}
+
+.parallax .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4em;
+    font-weight: bold;
+    padding: 20px;
+    width: 90%;
+    max-width: 3000%;
+}
+
+.summary-container h1 {
+    text-align: center;
+    color: #340d0d;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    min-width: 100%;
+}
+
+.summary-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    padding: 1%;
+    border-radius: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    line-height: 4vh; 
+}
+
+.summary-section img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.summary-section .info {
+    flex-grow: 1;
+}
+
+.summary-section .info h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: rgb(255,198,39);
+    text-align: center;
+}
+
+.summary-section .info h2 a {
+    text-decoration: none;
+    color: rgb(255,198,39);
+}
+
+.summary-section .info h2 a:hover {
+    text-decoration: underline;
+}
+
+.summary-section .info p {
+    margin: 5px 0 0;
+    margin-left: 10px;
+    color: #fff;
+}
+
+.summary-section .icon {
+    width: 48px; /* Increased icon size */
+    height: 48px;
+    margin-right: 15px; /* Adjust margin if needed */
+}
+
+.summary-section a:hover {
+    text-decoration: underline;
+}
+
+.summary-section a {
+    color: rgb(255, 198, 39);
+    text-decoration: none;
+    font-size: 2em; /* Increased font size for better visibility */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.summary-section h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.home-button {
+    position: absolute;
+    top: 1.24vh;
+    right: 4%;
+}
+/* 
+.home-button img {
+    width: 40px; /* Adjust the size of the home button image */
+    /* height: auto; */
+
+
+.summary-container h2, .summary-container h3 {
+    text-decoration: none;
+    color: rgb(255,198,39);
+}
+.centered-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; /* Adjust the percentage to make the image bigger or smaller */
+    margin-bottom: 50px;
+}
+
+.parallax {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    margin-top: auto;
+}
+
+.team-container, .summary-container {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    color: #fff; /* White text for contrast */
+}
+
+.team-container h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.team-member .info {
+    flex-grow: 1;
+}
+
+.team-member .info h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.team-member .info h2 a {
+    text-decoration: none;
+    color: rgb(255,198,39);
+}
+
+.team-member .info h2 a:hover {
+    text-decoration: underline;
+}
+
+.team-member .info p {
+    margin: 5px 0 0;
+    color: #fff;
+}
+
+.team-member .info h2 {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.team-member .info h2 a {
+    text-decoration: none;
+    color: rgb(255,198,39);
+    margin-right: 10px;
+}
+
+.team-member .info h2 a:hover {
+    text-decoration: underline;
+}
+
+.team-member .info h2 .small-icon {
+    width: 70px; /* Adjust size as needed */
+    height: auto;
+    align-items: right;
+}
+
+/* Style for the dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style for the dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(140, 29, 64); 
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 105%; /* Positions the dropdown right below the options container */
+    left: 0%;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Show the dropdown content when hovering over the dropdown button */
+.dropdown:hover .dropdown-content,
+.dropdown-content:hover {
+    display: block;
+}
+
+html {
+    scroll-padding-top: 30vh; /* Adjust this value to match the height of your header */
+}
