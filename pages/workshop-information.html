@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../media.css">
+    <script src="../media.js"></script>
     <title>Workshop Information</title>
     <style>
-       
         .parallax {
             background-image: url("../images/ngc.jpg");
         }
@@ -14,15 +14,20 @@
         .team-container, .summary-container {
             background-image: url("../images/ngc.jpg");
         }
+
     </style>
 </head>
 <body>
     <div class="header-container">
         <img src="../images/asu.png" alt="Logo" class="logo">
+        <div class="home-button">
+            <a href="../index.html"><img src="../images/home_button.png" alt="Home"></a>
+        </div>
     </div>
 
     <!-- Options Section -->
     <div class="options-container">
+        <button class="toggle-button" aria-label="Toggle Navigation">&#9664;</button> <!-- Left-pointing arrow -->
         <div class="nav-links">
             <div class="dropdown">
                 <a href="what-is-trec.html" class="dropdown-button">What is TREC?</a>
@@ -57,9 +62,6 @@
             <a href="workshop-information.html"  class="active dropdown-button">Workshop Information</a>
             <a href="links.html">Links</a>
         </div>
-        <div class="home-button">
-            <a href="../index.html"><img src="../images/home_button.png" alt="Home"></a>
-        </div>
     </div>
 
     <div class="parallax">
@@ -76,5 +78,6 @@
                 <p></p>
             </div>
         </div>
+    </div>
 </body>
 </html>
