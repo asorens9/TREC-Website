@@ -234,76 +234,84 @@ body, html {
     margin-bottom: 40px;
 }
 
+/* Team Member Container */
 .team-member {
-    display: flex;
-    align-items: center;
+    display: flex; /* Create a two-column layout */
+    flex-direction: row; /* Horizontal layout for images and info */
+    align-items: flex-start; /* Align items at the top */
     margin-bottom: 30px;
+    max-width: 100%; /* Set a maximum width for the block */
     background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
-    padding: 15px;
-    border-radius: 8px;
+    padding: 5px;
+    border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.team-member img {
+/* Image Section */
+.image-section {
+    flex: 0 0 150px; /* Set the width of the image section */
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center the images */
+    margin-right: 20px; /* Add space between images and info section */
+}
+
+.image-section img {
+    max-width: 100%; /* Ensure images fit within their container */
+    height: auto;
+    margin-bottom: 10px; /* Space between the main image and small icon */
+    border-radius: 50%; /* Circular main image */
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    margin-right: 20px;
 }
 
+.image-section .small-icon {
+    max-width: 100px; /* Adjust size of the small icon */
+    border-radius: 0; /* Ensure the small icon is not circular */
+}
+
+/* Info Section */
 .team-member .info {
-    flex-grow: 1;
+    flex: 1; /* Take up the remaining space */
+    text-align: left; /* Align text to the left */
 }
 
-.team-member .info h2 {
-    margin: 0;
-    font-size: 1.5em;
-    color: #fff;
-}
-
-.team-member .info h2 a {
-    text-decoration: none;
-    color: rgb(255,198,39);
-}
-
-.team-member .info h2 a:hover {
-    text-decoration: underline;
-}
-
-.team-member .info p {
-    margin: 5px 0 0;
-    color: #fff;
-}
-
+/* Name and Title Styling */
 .team-member .info h2 {
     display: flex;
     align-items: center;
-    margin: 0;
+    margin: 0 0 10px 0; /* Add spacing below the name */
     font-size: 1.5em;
     color: #fff;
-}
-
-.team-member .info h2 {
-    text-decoration: none;
-    color: rgb(255,198,39);
-    margin-right: 10px;
 }
 
 .team-member .info h2 a {
     text-decoration: none;
     color: rgb(255,198,39);
-    margin-right: 10px;
+    margin-right: 10px; /* Space between the name and the icon */
 }
 
 .team-member .info h2 a:hover {
     text-decoration: underline;
 }
 
+/* Position Small Icon Inside h2 */
 .team-member .info h2 .small-icon {
     max-width: 160px; /* Adjust size as needed */
     max-height: 45px;
-    display: inline-block; /* Ensure it behaves as an inline element */
-    margin-left: 10px; /* Add some space between the icon and the text */
+    margin-left: 10px; /* Add space between the icon and the text */
+}
+
+/* Title Styling */
+.team-member .info .title {
+    margin: 5px 0 0;
+    color: #fff;
+    text-align: left; /* Align title to the left */
+}
+
+/* Additional Text Styling */
+.team-member .info p {
+    color: #fff;
+    margin-top: 10px;
 }
 
 .icon {
@@ -379,7 +387,7 @@ html {
         border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Add separation between links */
         font-size: 1.1em; /* Standard font size for main options */
     }
-
+    
     .dropdown-content {
         position: static;
         display: block; /* Keep dropdown content always visible */
@@ -400,6 +408,68 @@ html {
         cursor: pointer;
         z-index: 1000; /* Ensure it stays above other content */
         right: 10px; /* Adjust right position */
+    }
+
+    .parallax .content {
+        font-size: 300%;
+        margin: 0 auto; /* Center the content */
+        padding: 0 20px; /* Add some padding */
+        box-sizing: border-box;
+    }
+
+    /* Image Section */
+    .image-section {
+        flex: 0 0 70px; /* Set the width of the image section */
+        display: flex;
+        flex-direction: column; /* Stack images vertically */
+        align-items: center; /* Center the images */
+        margin-right: 20px; /* Add space between images and info section */
+    }
+    
+    .image-section img {
+        max-width: 100%; /* Ensure images fit within their container */
+        height: auto;
+        margin-bottom: 10px; /* Space between the main image and small icon */
+        border-radius: 50%; /* Circular main image */
+        border-radius: 50%;
+    }
+    
+    .image-section .small-icon {
+        max-width: 100px; /* Adjust size of the small icon */
+        border-radius: 0; /* Ensure the small icon is not circular */
+    }
+    
+    /* Info Section */
+    .team-member .info {
+        flex: 1; /* Take up the remaining space */
+        text-align: left; /* Align text to the left */
+    }
+    
+    /* Name and Title Styling */
+    .team-member .info h2 {
+        display: flex;
+        align-items: center;
+        margin: 0 0 10px 0; /* Add spacing below the name */
+        font-size: 1.5em;
+        color: #fff;
+    }
+    
+    .team-member .info h2 a {
+        text-decoration: none;
+        color: rgb(255,198,39);
+        margin-right: 10px; /* Space between the name and the icon */
+    }
+    
+    .team-member .info h2 a:hover {
+        text-decoration: underline;
+    }
+
+    .summary-container {
+        padding: 20px;
+    }
+
+    .summary-section {
+        padding: 15px; /* Adjust this value as needed */
     }
 }
 
