@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../../media.css">
+    <script src="../../media.js"></script>
     <title>Meet the Team</title>
     <style>
         /* Parallax Section */
@@ -13,30 +14,28 @@
         .team-container {
             background-image: url("../../images/who-are-we-image.png");
         }
-        
+
+        .team-container p{
+            line-height: 200%;
+        }
+        .team-container h4{
+            line-height: 60%;
+        }
+
+
     </style>
 </head>
 <body>
 
-    <!-- Header Section -->
-    <div class="header-container">
-        <img src="../../images/asu.png" alt="Logo" class="logo">
+<!-- Header Section -->
+<div class="header-container">
+    <img src="../../images/asu.png" alt="Logo" class="logo">
+    <div class="home-button">
+        <a href="../../index.html"><img src="../../images/home_button.png" alt="Home"></a>
     </div>
+</div>
 
-    <!-- Options Section -->
-    <div class="options-container">
-        <div class="nav-links">
-            <a href="../what-is-trec.html">What is TREC?</a>
-            <a href="../who-we-are.html" class="active">Who We Are</a> <!-- Active link -->
-            <a href="../schedule.html">Calendar</a>
-            <a href="../publications.html">Publications</a>
-            <a href="../workshop-information.html">Workshop Information</a>
-            <a href="../links.html">Links</a>
-        </div>
-        <div class="home-button">
-            <a href="../../index.html"><img src="../../images/home_button.png" alt="Home"></a>
-        </div>
-    </div>
+<div id="options-bar"></div>
 
     <!-- Parallax Section -->
     <div class="parallax">
@@ -48,15 +47,19 @@
     <!-- Meet the Team Section -->
     <div class="team-container">
         <div class="team-member">
-            <img src="../../images/karabrugman.png" alt="Team Member 0">
+            <div class="image-section">
+                <img src="../../images/karabrugman.png" alt="Dr. Kara Brugman">
+                <img src="../../images/asu-logo.png" alt="Small Icon" class="small-icon">
+            </div>
             <div class="info">
-                <h2><a href="people/brugman.html">Dr. Kara Brugman</a>
-                    <img src="../../images/asu-logo.png" alt="Small Icon" class="small-icon"></h2>
-                <p>Co-Investigator</p>
-                <p>(Education background, tasks, main goals, big accomplishments)</p>
+                <h2><a href="https://karabrugman.com/">Dr. Kara Brugman</a></h2><!--people/brugman.html-->
+                <h3 class="title">Co-Investigator</h3>
+                <h3 class="title">Task 4 Lead</h3>
+                <p>&emsp;&emsp;Kara Brugman is an experimental petrologist who is interested in magma genesis and volatile solubility on exoplanets, Earth, and solar system bodies; the timescales of events in magmatic systems; geothermometry; volcano science and hazards; high-silica magmatic systems; and how our planet's volcanologic and petrologic mechanisms can be used to understand those on other planets and moons. Dr. Brugman is leading the Task 4 team which will conduct experiments to determine melting curves and bioessential element solubilities for hypothetical exoplanet compositions, and will model the rates of change of upper mantle and crust compositions and volatile contents as heat fluxes for these hypothetical exoplanets decline. </p>
             </div>
         </div>
     </div>
+    
 
 </body>
 </html>
